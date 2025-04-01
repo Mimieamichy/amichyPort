@@ -5,7 +5,7 @@ import Contact from "../components/Contact";
 
 const Home = () => {
   return (
-    <div className=" bg-backgroundGrey text-white">
+    <div className="  text-white">
       <Hero />
     </div>
   );

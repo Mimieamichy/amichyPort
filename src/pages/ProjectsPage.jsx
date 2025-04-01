@@ -28,7 +28,7 @@ const ProjectsPage = () => {
   ];
 
   return (
-    <section className="py-10 px-4">
+    <section className="py-10 px-4 bg-[#1f2029]">
       <h2 className="text-3xl font-bold text-center mb-10 text-white">My Projects</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
         {projects.map((proj, index) => (
