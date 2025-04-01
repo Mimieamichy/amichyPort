@@ -14,19 +14,7 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
-  });
-
-  useEffect(() => {
-    const root = document.documentElement;
-    if (darkMode) {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-    localStorage.setItem("theme", darkMode ? "dark" : "light");
-  }, [darkMode]);
+  
 
   if (showIntro) {
     return (
@@ -44,7 +32,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen transition-colors">
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Navbar  />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<ProjectsPage />} />
