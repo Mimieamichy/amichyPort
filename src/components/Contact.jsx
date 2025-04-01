@@ -66,7 +66,7 @@ const Contact = () => {
               name="email"
               required
               placeholder="Your Email"
-              className="w-full p-2 rounded capitalize bg-darkGrey text-white border border-gray-600"
+              className="w-full p-2 rounded  bg-darkGrey text-white border border-gray-600"
             />
             <input
               type="text"
